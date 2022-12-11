@@ -1,0 +1,42 @@
+@use "mixins";
+
+.wrapper {
+   padding-inline: calc(1.5 * var(--spacer));
+   padding-block: calc(1.75 * var(--spacer));
+}
+
+.col {
+   display: grid;
+
+   &--1 {
+      gap: var(--spacer);
+   }
+
+   &--2 {
+      gap: calc(0.5 * var(--spacer));
+      align-items: start;
+   }
+
+   &--3 {
+      gap: var(--spacer);
+   }
+}
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+@include mixins.media-responsive-above(525px) {
+   .wrapper {
+      padding-inline: calc(2.25 * var(--spacer));
+      padding-block: calc(2.25 * var(--spacer));
+   }
+}

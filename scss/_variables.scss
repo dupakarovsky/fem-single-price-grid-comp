@@ -1,0 +1,25 @@
+/////////////////////////////
+/// SASS VARIABLES
+// Place SASS variables here
+$primary-cyan: hsl(179, 62%, 43%);
+$primary-bright-yellow: hsl(71, 73%, 54%);
+$neutral-light-gray: hsl(204, 43%, 93%);
+$neutral-grayish-blue: hsl(218, 22%, 67%);
+/////////////////////////////
+/// CSS VARIABLES
+/// Place CSS Variables here
+:root {
+   // Desing Colors
+   --primary-cyan: #{$primary-cyan};
+   --primary-bright-yellow: #{$primary-bright-yellow};
+   --neutral-light-gray: #{$neutral-light-gray};
+   --neutral-grayish-blue: #{$neutral-grayish-blue};
+   // Desing Sizes:
+   --size-mobile: 37.5rem;
+   --size-desktop: 144rem;
+
+   --fs-default: 1.6rem;
+   --ff-primary: "Karla";
+
+   --spacer: 1.6rem;
+}
